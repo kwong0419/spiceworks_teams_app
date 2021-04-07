@@ -2,7 +2,7 @@
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
     "manifestVersion": "1.8",
     "version": "1.0.0",
-    "id": "c1ef6459-f9c3-4854-9522-5e6f8eede884",
+    "id": "b84f8cc0-b9a1-40bc-a1fd-a04a3bc5559d",
     "packageName": "com.microsoft.teams.extension",
     "developer": {
         "name": "Teams App, Inc.",
@@ -19,18 +19,17 @@
         "full": ""
     },
     "description": {
-        "short": "Short description for Personal App.",
-        "full": "Full description of Personal App."
+        "short": "Short description for My Group Tab.",
+        "full": "Full description of My Group Tab."
     },
     "accentColor": "#FFFFFF",
-    "staticTabs": [
+    "configurableTabs": [
         {
-            "entityId": "index",
-            "name": "Personal Tab",
-            "contentUrl": "https://localhost:3000/tab",
-            "websiteUrl": "https://localhost:3000/tab",
+            "configurationUrl": "https://localhost:3000/config",
+            "canUpdateConfiguration": true,
             "scopes": [
-                "personal"
+                "team",
+                "groupchat"
             ]
         }
     ],

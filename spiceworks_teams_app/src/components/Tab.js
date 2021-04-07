@@ -6,7 +6,7 @@ import './App.css';
 import * as microsoftTeams from "@microsoft/teams-js";
 
 /**
- * The 'PersonalTab' component renders the main tab content
+ * The 'GroupTab' component renders the main tab content
  * of your app.
  */
 class Tab extends React.Component {
